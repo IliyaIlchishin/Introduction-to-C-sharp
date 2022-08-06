@@ -2,10 +2,8 @@
 
 
 System.Console.WriteLine("Please enter number");
-string number = Console.ReadLine();
-int x = Convert.ToInt32 (number);
-
-int result = x * x; 
+int number = Convert.ToInt32 (Console.ReadLine());
+int result = number * number; 
 
 
 Console.WriteLine(result);
