@@ -1,1 +1,0 @@
-Programm that checks if number#1 is the square of number#2
