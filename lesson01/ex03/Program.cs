@@ -1,11 +1,11 @@
 ﻿
 System.Console.WriteLine("Please enter number from 1 to 7");
-int DayNumber = Convert.ToInt32 (Console.ReadLine ()); 
+int DayNumber = Convert.ToInt32(Console.ReadLine());
 
 if (DayNumber > 7)
 {
     System.Console.WriteLine("Error! Please enter the number from 1 to 7");
-    DayNumber = Convert.ToInt32 (Console.ReadLine ()); 
+    DayNumber = Convert.ToInt32(Console.ReadLine());
 }
 
 else if (DayNumber == 1)
@@ -30,9 +30,9 @@ else if (DayNumber == 5)
 }
 else if (DayNumber == 6)
 {
-System.Console.WriteLine("Saturday");
+    System.Console.WriteLine("Saturday");
 }
 else if (DayNumber == 7)
 {
-System.Console.WriteLine("Sunday");
+    System.Console.WriteLine("Sunday");
 }
