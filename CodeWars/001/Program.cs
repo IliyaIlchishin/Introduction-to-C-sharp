@@ -12,5 +12,6 @@ string Derive (double coefficient, double exponent)
     return FinalResult;
   }
 
+
 string derive = Derive (2,5);
 System.Console.WriteLine(derive);
