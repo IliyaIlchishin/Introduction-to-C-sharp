@@ -4,7 +4,7 @@ int NumberTrasformator(int num)
 {
     int result = 0;
 
-    if (num > 99 )
+    if (num > 99 && num < 999)
     {
         result = num % 10;
     }
@@ -16,25 +16,19 @@ int NumberTrasformator(int num)
     {
         result = (num % 1000) / 100;
     }
-    else result = 999;
-
+    if (num > 99999 && num < 999999)
+    {
+        result = (num % 10000) / 1000;
+    }
+    if (num > 999999 && num < 9999999)
+    {
+        result = (num % 100000) / 10000;
+    }
     return result;
 }
 
-int num1 = 933;
+int num1 = 21;
 
 int result = NumberTrasformator(num1);
-System.Console.WriteLine($"Исходное число {num1}, третья цифра {result}");
-
-//if (result == 0) System.Console.WriteLine("Третьей цифры нет");
-//else System.Console.WriteLine($"Исходное число {num1}, третья цифра {result}");
-
-
-
-
-/*
-Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
-645 -> 5
-78 -> третьей цифры нет
-32679 -> 6
-*/
+if (result == 0) System.Console.WriteLine("Третьей цифры нет"); 
+else System.Console.WriteLine($"Исходное число {num1}, третья цифра {result}");
