@@ -31,6 +31,7 @@ string Weekday (int day)
     {
         result = Convert.ToString (System.Console.WriteLine("Да, выходной"));
     }
+    else  result = Convert.ToString (System.Console.WriteLine("Нет, рабочий день"));
     return result;
 }
 
