@@ -1,34 +1,26 @@
 ﻿
-int NumberTrasformator(int num)
-
+int ThirdNum (int number)
 {
-    int result = 0;
-
-    if (num > 99 && num < 999)
+    while (number > 999) 
     {
-        result = num % 10;
+            number = number / 10; 
     }
-    if (num > 999 && num < 9999)
-    {
-        result = (num % 100) / 10;
-    }
-    if (num > 9999 && num < 99999)
-    {
-        result = (num % 1000) / 100;
-    }
-    if (num > 99999 && num < 999999)
-    {
-        result = (num % 10000) / 1000;
-    }
-    if (num > 999999 && num < 9999999)
-    {
-        result = (num % 100000) / 10000;
-    }
-    return result;
+    if (number < 100) System.Console.WriteLine("В числе меньше трех цирф");
+    else number = number % 10; 
+    return number; 
 }
 
-int num1 = 21;
+int GetData()
+{
+    Console.WriteLine("Пожалуйста введите число: ");
+    return Convert.ToInt32(Console.ReadLine());
+}
 
-int result = NumberTrasformator(num1);
-if (result == 0) System.Console.WriteLine("Третьей цифры нет"); 
-else System.Console.WriteLine($"Исходное число {num1}, третья цифра {result}");
+int number = ThirdNum (356572);
+System.Console.WriteLine($"The third digit is {number}");
+
+/*
+int num = 975; 
+int result = num % 10; 
+
+System.Console.WriteLine(result);*/

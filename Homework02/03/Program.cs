@@ -1,14 +1,15 @@
 ﻿
-int Weekday (int day)
+string Weekday (int day)
 {
-    int result; 
+    string result; 
     if (day <= 5) 
     {
-        result = 1;
+        result = "No, it is working day";
     }
-    else result = 2; 
+    else result = "Yes, it is weekend";
 
     return result;
+  
 }
 
 int GetData() 
@@ -18,23 +19,7 @@ int GetData()
 }
 
 
-int weekday = Weekday (GetData()); 
-if (weekday == 1) System.Console.WriteLine("Нет, рабочий день");
-else System.Console.WriteLine("Да, выходной");
-
-
-/*  Как внутри функции результату присвоить стринговое значение? Выдает ошибку
-string Weekday (int day)
-{
-    string result; 
-    if (day <= 5) 
-    {
-        result = Convert.ToString (System.Console.WriteLine("Да, выходной"));
-    }
-    else  result = Convert.ToString (System.Console.WriteLine("Нет, рабочий день"));
-    return result;
-}
-
-int weekday = Weekday (2); 
+string weekday = Weekday (GetData()); 
 System.Console.WriteLine(weekday);
-*/
+
+
