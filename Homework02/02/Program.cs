@@ -12,11 +12,11 @@ int ThirdNum (int number)
 
 int GetData()
 {
-    Console.WriteLine("Пожалуйста введите число: ");
+    Console.WriteLine("Please enter any number and we will tell you the 3rd digit: ");
     return Convert.ToInt32(Console.ReadLine());
 }
 
-int number = ThirdNum (356572);
+int number = ThirdNum (GetData());
 System.Console.WriteLine($"The third digit is {number}");
 
 /*
