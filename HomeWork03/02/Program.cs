@@ -17,5 +17,3 @@ double [] d = {1,-1,9};
 double distance = Coordinates (c, d );
 System.Console.WriteLine(distance);
 
-
-
