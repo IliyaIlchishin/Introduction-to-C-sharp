@@ -37,3 +37,5 @@ int GetData()
 
 string week = Weekday (GetData());
 System.Console.WriteLine(week);
+
+// По заданному номеру дня недели вывести его название

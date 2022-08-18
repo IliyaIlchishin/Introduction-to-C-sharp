@@ -12,3 +12,5 @@ int GetData ()
 
 int square = SquareNumber(GetData());
 System.Console.WriteLine(square);
+
+ //0. Вывести квадрат числа
