@@ -1,4 +1,4 @@
-﻿int NumSun(int num)
+﻿int NumSum(int num)
 {
 
     int sum = 0;
@@ -9,5 +9,5 @@
     return sum;
 
 }
-int sum = NumSun (488);
+int sum = NumSum (488);
 System.Console.WriteLine(sum);

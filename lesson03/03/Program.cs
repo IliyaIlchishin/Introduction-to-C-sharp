@@ -16,7 +16,7 @@ void Metod21(string msg, int count)
         i++;
     }
 }
-Metod21("Fuck you", 4);
+Metod21("hello", 4);
 
 Metod21(msg: "Sample", count: 4);
 
