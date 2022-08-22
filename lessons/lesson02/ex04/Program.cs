@@ -16,15 +16,15 @@ void PrintArray(int[] col)
     int position = 0;
     while (position < count)
     {
-        Console.WriteLine (col[position]);
+        Console.WriteLine(col[position]);
         position++;
     }
 }
 
-int Index0f(int[]collection,int find)
+int Index0f(int[] collection, int find)
 {
     int count = collection.Length;
-    int index = 0; 
+    int index = 0;
     int position = -1;
     while (index < count)
     {
@@ -35,15 +35,15 @@ int Index0f(int[]collection,int find)
         }
         index++;
     }
-        return position;
+    return position;
 }
 
 
-int[] BigArray = new int [10];
+int[] BigArray = new int[10];
 FillArray(BigArray);
 PrintArray(BigArray);
 System.Console.WriteLine();
 
-int pos = Index0f(BigArray,11);
+int pos = Index0f(BigArray, 11);
 System.Console.WriteLine(pos);
 

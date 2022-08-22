@@ -17,5 +17,5 @@ int Pow (int a, int b)
     return result;
 }
 
-int pow = Pow (2,8);
+int pow = Pow (3,5);
 System.Console.WriteLine(pow);
