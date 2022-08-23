@@ -6,16 +6,17 @@ void BinaryToDecimal(int[] BinaryArray)
     int length = BinaryArray.Length;
     double result = 0;
     int pow = 0;
-    for (int i = length; i > length; i--)
+                        
+    for (int i = length -1; i >= 0; i--)
     {
-        result = result + (BinaryArray[i] * Math.Pow (2, pow));
+        result = result + Math.Pow(2, pow) * BinaryArray[i];
         System.Console.WriteLine($"Array value [{i}] - {BinaryArray[i]}");
         pow++;
         System.Console.WriteLine($"the result round [{i}] - {result}");
     }
     System.Console.WriteLine($"the FINAL result {result}");
 }
-int[] binary = { 1, 1, 0, 1};
+int[] binary = { 1, 1, 0, 0};
 BinaryToDecimal(binary);
 
 /*
@@ -49,7 +50,6 @@ Step2: 0 * 2^1=0
 Step3: 1 * 2^2=4
 Step4: 0 * 2^3=0
 Step5: 1 * 2^4 =16
-So, the Decimal Number = 1 + 0 + 4 + 0 + 16 = 20
-
+So, the Decimal Number = 1 + 0 + 4 + 0 + 16 = 21
 
 */

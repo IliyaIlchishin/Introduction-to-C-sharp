@@ -9,5 +9,5 @@
     return sum;
 
 }
-int sum = NumSum (488);
+int sum = NumSum (411);
 System.Console.WriteLine(sum);
