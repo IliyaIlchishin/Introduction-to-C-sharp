@@ -1,7 +1,6 @@
 ﻿void RandomArray (int [] array)  
 {
     int length = array.Length;
-    
     for (int i = 0; i<length; i++)
     {
         array[i] = new Random().Next(100, 1000);
