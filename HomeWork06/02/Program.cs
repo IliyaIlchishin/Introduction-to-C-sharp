@@ -1,4 +1,5 @@
 ﻿
+
 System.Console.WriteLine("Please enter k1");
 double k1 = Convert.ToDouble (Console.ReadLine());
 

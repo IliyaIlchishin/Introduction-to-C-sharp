@@ -1,16 +1,15 @@
 ﻿
-int[] strToInt(string numbers)
+int[] StringToInteger (string InputNumbers)
 {
-    numbers = numbers.Replace(" ", " ");
+    InputNumbers= InputNumbers.Replace(" ", " ");
 
-    string[] tempArray = numbers.Split(",");
+    string[] TemporaryArray = InputNumbers.Split(",");
 
-    int length = tempArray.Length;
-    int[] array = new int[length];
+    int[] array = new int[TemporaryArray.Length];
 
-    for (int i = 0; i < tempArray.Length; i++)
+    for (int i = 0; i < TemporaryArray.Length; i++)
     {
-        array[i] = Convert.ToInt32(tempArray[i]);
+        array[i] = Convert.ToInt32(TemporaryArray[i]);
     }
     return array;
 }
@@ -36,11 +35,11 @@ int Numbers(int[] array)
 
 
 System.Console.WriteLine(" Пожалуйста введите числа через , ");
-string numbers = Console.ReadLine();
-int[] array = strToInt(numbers);
+string InputNumbers= Console.ReadLine();
+int[] array = StringToInteger (InputNumbers);
 Print(array);
-int QtyofPositives = Numbers (array);
-System.Console.WriteLine(QtyofPositives);
+int QuantityOfPositives = Numbers (array);
+System.Console.WriteLine(QuantityOfPositives);
 
 
 
