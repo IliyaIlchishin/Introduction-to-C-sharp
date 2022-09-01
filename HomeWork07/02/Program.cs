@@ -39,8 +39,8 @@ double ArrayIndexValue(double[,] array)
     int j = array.GetLength(1);
 
 
-    if (m <= i && n! <= j) IndexValue = Convert.ToDouble(array[m, n]);
-    if (m > i || n > j) 
+    if (m < i && n < j) IndexValue = Convert.ToDouble(array[m, n]);
+    if (m >= i || n >= j) 
     {
         System.Console.WriteLine("Index is outside the bounds of the array.");
         return 0;
