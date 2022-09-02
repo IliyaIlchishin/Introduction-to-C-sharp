@@ -15,11 +15,8 @@ void ArrayRearrangeMethod(int[,] array)
                     temp = array[i, j];
                     array[i, j] = array[i, c];
                     array[i, c] = temp;
-                    System.Console.WriteLine($"array[i, j]{array[i, j]}");
-                    
                 }
             }
-
         }
     }
 }
