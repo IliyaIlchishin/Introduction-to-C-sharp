@@ -39,8 +39,10 @@ int ArraySize = 2;
             for (int k = 0; k < ArraySize; k++)
             {
                 ProductOfMatrix[i, j] += matrix1[i, k] * matrix2[k, j];
+                System.Console.WriteLine($"Произведение матриц += {ProductOfMatrix[i, j]} матрица #1 - {i},{k} ({matrix1[i, k] }) * матрица #2 - {k},{j} ({matrix2[k, j]})");
+                
             }
-        }
+        }   System.Console.WriteLine();
     }
 Print(ProductOfMatrix);
 
@@ -62,8 +64,6 @@ Print(matxrix2);
 ProductOfMatrix(matxrix, matxrix2);
 
 
-
-
 /* Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 Например, даны 2 матрицы:
 2 4 | 3 4
@@ -71,5 +71,4 @@ ProductOfMatrix(matxrix, matxrix2);
 Результирующая матрица будет:
 18 20
 15 18
-
 */

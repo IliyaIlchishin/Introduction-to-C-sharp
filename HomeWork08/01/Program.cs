@@ -7,7 +7,7 @@ void ArrayRearrangeMethod(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            for (int c = array.GetLength(1) - 1; c > 0; c--)
+            for (int c = array.GetLength(1) - 1; c > j; c--)
             {
                 //1             2
                 if (array[i, j] < array[i, c])
@@ -66,4 +66,8 @@ Print(array);
 7 4 2 1
 9 5 3 2
 8 4 4 2
+
+
+
+
 */

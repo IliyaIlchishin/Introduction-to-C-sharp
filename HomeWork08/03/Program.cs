@@ -7,7 +7,7 @@ int[,,] RandomArray(int a, int b, int c)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            for (int k = 0; k < array.GetLength(1); k++)
+            for (int k = 0; k < array.GetLength(2); k++)
 
             {
                 array[i, j, k] = new Random().Next(10, 99);
@@ -16,7 +16,6 @@ int[,,] RandomArray(int a, int b, int c)
     }
     return array;
 }
-
 
 void Print(int[,,] array)
 {
